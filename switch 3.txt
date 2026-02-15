@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+int main()
+{
+    int acc_type;
+    int balance;
+    int withdrawAmount;
+    scanf("%d %d %d",&acc_type,&balance,&withdrawAmount);
+    switch (acc_type){
+        case 1:
+        if ( withdrawAmount <= balance )
+        {
+            printf("transaction successful\n");
+        }else{
+            printf("insufficient balance\n");
+            break;
+        }   case 2:
+        if (withdrawAmount <= 5000)
+        {
+            printf("withdrawal exceeded\n");
+        }else
+        {
+            printf("transaction successful\n");
+            break;
+        }
+        default:
+        printf("invalid transaction");
+        return 0;
+    }
+}
