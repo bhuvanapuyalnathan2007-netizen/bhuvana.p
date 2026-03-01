@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int N, i;
+    int expected_sum, actual_sum = 0, missing;
+    scanf("%d", &N);
+    int arr[N-1];
+    for(i = 0; i < N-1; i++) {
+        scanf("%d", &arr[i]);
+        actual_sum += arr[i];
+    }
+    expected_sum = N * (N + 1) / 2;
+    missing = expected_sum - actual_sum;
+    printf("%d\n", missing);
+
+    return 0;
+}
