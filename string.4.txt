@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+  char str[20];
+  fgets(str,sizeof str,stdin);
+  int lower=0,upper=0;
+  for (int i=0;str[i]!='\0';i++) {
+    if (str[i]>=0&&str[i]<='z') {
+    lower++;
+  }else if (str[i]>='A'&&str[i]<='Z') {
+    upper++;
+  }
+    printf("%d upper letter we have in our string\n",upper);
+    printf("%d lower letter we have in our string\n",lower);
+  }
+
+   return 0;
+
+    }
+
+
+
