@@ -1,0 +1,42 @@
+#include<stdio.h>
+ float simpleinterest(int p,int r,int t) {
+     float simpleinterest=(p*r*t)/100;
+     return simpleinterest;
+ }
+int main() {
+     int p,r,t;
+     float interest;
+     scanf("%d %d %d",&p,&r,&t);
+     interest=simpleinterest(p,r,t);
+     printf("%.2f",interest);
+     return 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
