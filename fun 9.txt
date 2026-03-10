@@ -1,0 +1,21 @@
+#include<stdio.h>
+int polindrome(int n) {
+   int rem,temp;
+   int rev=0;
+   while (n!=0) {
+      rem=n%10;
+      rev=rev*10+rem;
+      n=n/10;
+   }
+   if (temp==rev)
+      return 1;
+}
+int main() {
+   int n;
+   scanf("%d",&n);
+   if (polindrome(n))
+      printf("polindrome");
+   else
+      printf("not polindrome");
+   return 0;
+}
